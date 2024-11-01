@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   font-family: "Poppins", sans-serif; 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+    margin: 47px 0 0 42px;
+}
+
+.links-menu {
+    font-size: 14px;
+    font-weight: 400;
+    color: #17233D;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.botao-menu {
+    width: 124px;
+    height: 51px;
+    margin-left: 32px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color:#6FBF44;
+    border: 1px solid #4CB538;
+    cursor: pointer;
+    
+}
+
+.img-logo {
+    width: 595px;
+    height: 500px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 84px;
+    margin-top: 163px;
+}
+
+.titulo {
+    width: 500px;
+    font-size: 62px;
+    font-weight: 700;
+    color: #161A49;
+}
+
+.texto{
+    width: 493px;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #4B505A;
+    margin: 47px 0 55px 0;
+
+}
+
+.link-conteudo {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6FBF44;
+    text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        display: none;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+    header{
+        margin: 17px 15px;  
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+    }
+    .titulo{
+        width: 278px;
+        font-size: 30px;
+    }
+    .texto {
+        width: 304px;
+        font-size: 18px;
+    }
+    .img-logo {
+        width: 312px;
+        height: auto;
+        
+    }
+    .caixa-img{
+        order: 2;
+    }
+    .conteudo {
+        order: 1;
+    }
+
+}
